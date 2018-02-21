@@ -1,36 +1,21 @@
 var words = [
-    "Seven",
-    "World",
-    "About",
-    "Again",
-    "Heart",
-    "Pizza",
-    "Water",
-    "Happy",
-    "Sixty",
-    "Board",
-    "Month",
-    "Angel",
-    "Death",
-    "Green",
-    "Music",
-    "Fifty",
-    "Three",
-    "Party",
-    "Piano",
-    "Kelly",
-    "Mouth",
-    "Woman",
-    "Sugar",
-    "Amber",
-    "Dream",
-    "Apple",
-    "Laugh",
-    "Tiger",
-    "Faith",
-    "Earth",
-    "River",
-    "Money"
+    "Whiteedged",
+    "Alstroemeria",
+    "Anemone",
+    "Carnation",
+    "Orchid",
+    "Cymbidium", 
+    "Daffodil", 
+    "Freesia",
+    "Gerberas",
+    "Gladiolus", 
+    "Gypsophilia",
+    "Iris",
+    "Narcissus",
+    "Peonies",
+    "Rhododendron", 
+    "Sunflower",
+    "Violet"
 ]
 var wins = 0;
 var losses = 0;
@@ -65,7 +50,7 @@ function start() {
                 if (hits.indexOf("_") === -1) {
                     wins++;
                     document.getElementById('wins').innerHTML = wins;
-                    alert("Congrats! You Won!");
+                    alert("Congrats! You Won! The word was " + word);
                     start();
                 }
             } else {
